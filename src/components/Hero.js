@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheckIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/24/outline';
+import logo from '../../images/banner.png';
 
 const Hero = () => {
   return (
@@ -14,6 +15,16 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
+              <div className="mb-8 lg:hidden">
+                <motion.img
+                  src={logo}
+                  alt="SecAudit MY Banner"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                />
+              </div>
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block">Secure Your Digital</span>
                 <span className="block text-primary">Assets with Confidence</span>
@@ -45,7 +56,19 @@ const Hero = () => {
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <div className="h-56 w-full bg-secondary sm:h-72 md:h-96 lg:w-full lg:h-full flex items-center justify-center">
-          <div className="grid grid-cols-2 gap-8 p-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="hidden lg:block w-full h-full p-8"
+          >
+            <img
+              src={logo}
+              alt="SecAudit MY Banner"
+              className="w-full h-full object-contain rounded-lg"
+            />
+          </motion.div>
+          <div className="grid grid-cols-2 gap-8 p-8 lg:hidden">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="bg-white p-6 rounded-lg shadow-lg"

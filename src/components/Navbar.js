@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import logo from '../../images/banner.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl font-bold text-primary">SecAudit MY</span>
+            <img 
+              src={logo} 
+              alt="SecAudit MY Logo" 
+              className="h-8 w-auto"
+              style={{ maxWidth: '200px', objectFit: 'contain' }}
+            />
           </div>
 
           {/* Desktop menu */}
