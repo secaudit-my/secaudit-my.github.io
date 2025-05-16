@@ -136,7 +136,16 @@ const Contact = () => {
                       <PhoneIcon className="h-6 w-6 text-primary" aria-hidden="true" />
                     </div>
                     <div className="ml-3 text-base text-gray-500">
-                      <p>+60 (3) XXX-XXXX</p>
+                      <p>
+                        <a 
+                          href="https://wa.me/601137360615" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="hover:text-primary transition-colors"
+                        >
+                          +60 11-3736 0615
+                        </a>
+                      </p>
                       <p className="mt-1">Mon-Fri 9am to 6pm MYT</p>
                     </div>
                   </div>
@@ -145,7 +154,14 @@ const Contact = () => {
                       <EnvelopeIcon className="h-6 w-6 text-primary" aria-hidden="true" />
                     </div>
                     <div className="ml-3 text-base text-gray-500">
-                      <p>contact@secaudit.my</p>
+                      <p>
+                        <a 
+                          href="mailto:atikqur007@gmail.com"
+                          className="hover:text-primary transition-colors"
+                        >
+                          atikqur007@gmail.com
+                        </a>
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start">
