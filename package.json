@@ -2,7 +2,7 @@
   "name": "secaudit-my",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://atikqur.github.io/secaudit-my",
+  "homepage": "https://secaudit-my.github.io",
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@testing-library/jest-dom": "^5.17.0",
@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "gh-pages": "^6.3.0",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.27"
   }
 }
