@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheckIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/24/outline';
-import logo from '../../images/banner.png';
+import logo from '../images/banner.png';
 
 const Hero = () => {
   return (

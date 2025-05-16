@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import logo from '../../images/banner.png';
+import logo from '../images/banner.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
