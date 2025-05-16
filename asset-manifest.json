@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/secaudit-my/static/css/main.d839503f.css",
+    "main.js": "/secaudit-my/static/js/main.39cc1b30.js",
+    "index.html": "/secaudit-my/index.html",
+    "main.d839503f.css.map": "/secaudit-my/static/css/main.d839503f.css.map",
+    "main.39cc1b30.js.map": "/secaudit-my/static/js/main.39cc1b30.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d839503f.css",
+    "static/js/main.39cc1b30.js"
+  ]
+}
